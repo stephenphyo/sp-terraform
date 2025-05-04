@@ -1,0 +1,12 @@
+[Unit]
+Description=Terraform HTTP Backend State Server
+After=network.target
+
+[Service]
+User=stephenphyo
+WorkingDirectory=<dir>
+ExecStart=/usr/bin/python3 /<dir>/terraform-http-backend.py
+Restart=always
+
+[Install]
+WantedBy=multi-user.target

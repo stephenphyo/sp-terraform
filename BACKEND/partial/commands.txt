@@ -1,0 +1,6 @@
+# Local
+terraform init -backend-config=backend-configs/dev-local.hcl -migrate-state
+terraform init -backend-config=backend-configs/test-local.hcl -migrate-state
+
+# S3
+terraform init -backend-config=backend-configs\dev-s3.hcl -backend-config=backend-configs\dev-s3-key.hcl -migrate-state

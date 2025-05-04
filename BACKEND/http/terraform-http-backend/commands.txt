@@ -1,0 +1,7 @@
+python3 -m venv ./venv
+chmod +x ./venv
+. ./venv/bin/activate
+pip install -U -r requirements.txt
+python terraform-http-backend.py
+
+deactivate
